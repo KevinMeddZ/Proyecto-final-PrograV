@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+    <title>Paso 2 -Reservacion</title>
+</head>
+<body class="body-segundo-paso">
+    
+    <div class="contenedor">
+        <form>
+            <h1>Reserva tu vuelo</h1>
+            
+            <table class="table-formulario">
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="txtNommbre"></td>
+                </tr>
+                <tr>
+                    <th>Cedula:</th>
+                    <td><input type="text" id="txtCedula"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" id="txtEmail"></td>
+                </tr>
+                <tr>
+                    <th>Telefono:</th>
+                    <td><input type="number" id="txtNumero"></td>
+                </tr>
+
+
+
+                <tr class="tr-formulario">
+                    <th>Destino:</th>
+                    <td><select id="destinos" name="destinos">
+                        <option value="Peru">Peru</option>
+                        <option value="USA">USA</option>
+                        <option value="España">España</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Guatemala">Guatemala</option>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Cantidad de tiquetes:</th>
+                    <td><input type="number" id="txtTiquetes"></td>
+                </tr>
+                <tr>
+                    <th>Cantidad de niños(a):</th>
+                    <td><input type="number" id="txtChamacos"></td>
+                </tr>
+                <tr>
+                    <th>Clase:</th>
+                    <td>
+                        <input type="radio" name="op" id="economica" value="1">Económica
+                        <input type="radio" name="op" id="Empresarial" value="2">Empresarial
+                        <input type="radio" name="op" id="Primera clase" value="3">Primera clase
+                    </td>
+                </tr>
+                <tr>
+                    <th>Fecha reservación:</th>
+                    <td><input type="date" id="dateFechaReservacion"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+
+                        <input type="button" value="Siguiente paso"  class="boton-formulario">
+                    </td>
+                    
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>

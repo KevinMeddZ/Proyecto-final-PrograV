@@ -6,13 +6,35 @@
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: white;
 }
 
 /*  imagen del menú */
 .menu-body img {
-    display: block;
     width: 100%;
     height: 100%;
+    align-items: center;
+}
+
+.iconMain{
+    width: 10px;
+}
+
+
+.imgIcon{
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 8px;
+}
+
+ul{
+    list-style-type: none;
+        padding: 0;
+        margin: 0;
+}
+
+li{
+    text-align: center;
 }
 
 
@@ -45,11 +67,12 @@
 }
 
 
+
 /*HOME*/
 
 
 .home-body{
-    background-image: url("/images/menubackground.jpg");
+    background-image: url("../images/menubackground.jpg");
     background-size: auto; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -83,14 +106,145 @@
 
 /* Galeria */
 
-
-
 .galeria-body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .galeria-body h2{
     color:whitesmoke;
     text-align: center;
     font-style: italic;
+}
+
+/*Reservaciones*/
+
+/*Paso 1*/
+
+.table-paso1{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+.tr-paso1, .td-paso1{
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.th-paso1{
+    background-color: #ed7e4e;
+}
+
+
+.tr-paso1:hover{
+    background-color: #eca366;
+}
+
+
+.h1-primerPaso{
+    text-align: center;
+    color: #000;
+}
+
+.body-primer-paso{
+    background-image: url('../images/fondoPrimerPaso.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.contenedor h1{
+    text-align: center;
+}
+
+.btnComprarTiquetes{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    
+    background-color:#fa9624  ;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(219, 142, 40, 0.5);
+}
+
+/* Estilo al pasar el cursor sobre el botón */
+.btnComprarTiquetes:hover{
+    background-color: #ee794a;
+}
+
+.centrar-boton{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*Paso 2*/
+.body-segundo-paso{
+    background-image: url('../images/fondoPrimerPaso.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Formato del table del formulario*/
+.table-formulario{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*td del formulario*/
+.table-formulario td{
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+/*Formato a los input y los text del formulario*/
+.table-formulario input, .table-formulario textarea{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/*Botones del formulario*/
+
+.boton-formulario{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    
+    background-color:#fa9624  ;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(219, 142, 40, 0.5);
+}
+
+.boton-formulario:hover{
+    background-color: #ee794a;
 }

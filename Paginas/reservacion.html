@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservacion PuraCode AirWays</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+    <title>Paso 1 -Tarifas</title>
 </head>
-<body>
-    Reservacion
+<body class="body-primer-paso">
+    
+    <div class="contenedor">
+
+        <h1 class="h1-primerPaso">Precios de los vuelos</h1>
+        <table border="1" class="table-paso1">
+            <tr>
+                <th class="th-paso1">Origen</th>
+                <th class="th-paso1">Destino</th>
+                <th class="th-paso1">Tarifa (temporada baja)</th>
+            </tr>
+            <tr class="tr-paso1">
+                <td class="td-paso1">Costa Rica</td>
+                <td>Peru</td>
+                <td>$ 500,00</td>
+            </tr>
+            <tr class="tr-paso1">
+                <td>Costa Rica</td>
+                <td class="td-paso1">USA</td>
+                <td>$ 250,00</td>
+            </tr>
+            <tr class="tr-paso1">
+                <td>Costa Rica</td>
+                <td>España</td>
+                <td class="td-paso1">$ 1000,00</td>
+            </tr>
+            <tr class="tr-paso1">
+                <td class="td-paso1">Costa Rica</td>
+                <td>Panama</td>
+                <td>$ 300,00</td>
+            </tr>
+            <tr class="tr-paso1">
+                <td class="td-paso1">Costa Rica</td>
+                <td class="td-paso1">Guatemala</td>
+                <td>$ 400,00</td>
+            </tr>
+        </table>
+        <div class="restricciones">
+            <li>6 tiquetes por persona</li>
+            <li>Los niños pagan el 40% de la tarifa de un adulto indiferentemente de la temporada</li>
+            <li>Los niños se consideran menores de 12 años.</li><br>
+        </div>
+        
+        <div class="centrar-boton">
+            <button class="btnComprarTiquetes" onclick="window.location.href='../Paginas/formulario.html'">Comprar tiquetes</button>
+        </div>
+    </div>
+
 </body>
 </html>

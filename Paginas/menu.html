@@ -4,21 +4,32 @@
 
     <title>Menu</title>
     <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Carga la biblioteca de íconos Font Awesome -->
 
 </head>
 
 <body class="menu-body">
+    <div>
+        <ul>
+            <li><img src="../images/IconMain.png" class="imgIcon" usemap="#mapMain"></li>
+            <br><br><br><br><br><br><br><br><br><br>
+            <li><img src="../images/iconGallery.png" class="imgIcon" usemap="#mapGallery"></li>
+            <br><br><br><br><br><br><br><br><br><br>
+            <li><img src="../images/iconTicket.png" class="imgIcon" usemap="#mapTicket"></li>
+        </ul>
+    </div>
+    
 
-    <img src="../images/menu.png" alt="menu" usemap="#map1">
 
 
-    <map name="map1">
-
-        <area shape="rect" coords="14,218,129,243" href="../Paginas/home.html" target="contenido" >
-        <area shape="rect" coords="14,361,130,386" href="../Paginas/galeria.html" target="contenido" >
-        <area shape="rect" coords="12,506,131,530" href="../Paginas/reservacion.html" target="contenido" >
-
-
+    <map name="mapMain">
+        <area shape="rect" coords="1,2,509,511" href="../Paginas/home.html" target="contenido">
+    </map>
+    <map name="mapGallery">
+        <area shape="rect" coords="1,2,511,511" href="../Paginas/galeria.html" target="contenido">
+    </map>
+    <map name="mapTicket">
+        <area shape="rect" coords="1,0,509,510" href="../Paginas/reservacion.html" target="contenido">
     </map>
 
 
