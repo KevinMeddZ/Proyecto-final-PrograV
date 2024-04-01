@@ -71,30 +71,40 @@ li{
 /*HOME*/
 
 
-.home-body{
-    background-image: url("../images/menubackground.jpg");
-    background-size: auto; 
-    background-position: center; 
-    background-repeat: no-repeat; 
 
-}
 
 .card {
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white;
-    padding: 20px; 
-    margin-bottom: 20px; 
-    border-radius: 10px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    overflow: hidden;
     text-align: center;
-    
 }
+
+
+
+
+.home-body{
+    background-color: rgb(15, 83, 83);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
 
 .card-white {
     background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido */
     backdrop-filter: blur(20px); /* Aplicar un desenfoque al fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color: rgb(255, 255, 255); /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espaciado inferior */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto;
+    max-width: 800px;
+    overflow: hidden;
     border-radius: 10px; /* Bordes redondeados */
     text-align: center; /* Centrar el texto */
 }
@@ -106,11 +116,26 @@ li{
 
 /* Galeria */
 
-.galeria-body{
-    background-color: rgb(255, 255, 255);
+.galery-body{
+    background-color: rgb(15, 83, 83);
+    margin: 0;
+    padding: 0;
 }
 
-.galeria-body h2{
+.card-whiteG {
+    background-color: rgba(24, 17, 17, 0.5); /* Fondo translúcido */
+    backdrop-filter: blur(20px); /* Aplicar un desenfoque al fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+}
+
+.galery-body h2{
     color:whitesmoke;
     text-align: center;
     font-style: italic;
@@ -247,4 +272,43 @@ li{
 
 .boton-formulario:hover{
     background-color: #ee794a;
+}
+
+
+
+/*PASO 3*/
+.body-tercer-paso{
+    background-image: url('../images/fondoPrimerPaso.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body-tercer-paso .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detalles-reserva {
+    width: calc(50% - 10px); /* Ajusta el ancho de cada contenedor */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ajusta el tamaño para incluir el relleno y el borde */
+}
+
+.detalles-reserva:last-child {
+    width: 100%; /* El último contenedor ocupa todo el ancho */
+}
+
+/* Estilos adicionales */
+.detalles-reserva {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.detalles-reserva > p {
+    margin: 5px 0; /* Ajusta el margen para los párrafos dentro de los contenedores */
 }
