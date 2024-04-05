@@ -312,3 +312,7 @@ li{
 .detalles-reserva > p {
     margin: 5px 0; /* Ajusta el margen para los párrafos dentro de los contenedores */
 }
+
+.tableComprador th{
+    text-align: right;
+}

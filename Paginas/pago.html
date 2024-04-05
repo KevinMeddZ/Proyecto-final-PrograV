@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+    <script type="text/JavaScript"src="../JS/Funciones.js"></script>
     <title>Detalles de la Reserva</title>
     
 </head>
@@ -12,32 +13,83 @@
     <div class="contenedor">
        
         <div class="detalles-reserva">
-            <h2>Detalles del Cliente</h2>
-            <p><strong>Nombre:</strong> <span id="nombre"></span></p>
-            <p><strong>Cédula:</strong> <span id="cedula"></span></p>
-            <p><strong>Email:</strong> <span id="email"></span></p>
-            <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+            <h2>Datos del comprador</h2>
+
+
+            <table class="TableComprador">
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="txtNombre" readonly></td>
+                </tr>
+                <tr>
+                    <th>Cédula</th>
+                    <td><input type="text" id="txtCedula" readonly></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" id="txtEmail" readonly></td>
+                </tr>
+                <tr>
+                    <th>Telefono:</th>
+                    <td><input type="number" id="txtTelefono" readonly></td>
+                </tr>
+                
+            </table>
         </div>
 
         <div class="detalles-reserva">
-            <h2>Detalles del Vuelo</h2>
-            <p><strong>Destino:</strong> <span id="destino"></span></p>
-            <p><strong>Cantidad de Tiquetes:</strong> <span id="cantidad-tiquetes"></span></p>
-            <p><strong>Clase:</strong> <span id="clase"></span></p>
-            <p><strong>Cantidad de Niños:</strong> <span id="cantidad-ninos"></span></p>
-            <p><strong>Cantidad de Adultos:</strong> <span id="cantidad-adultos"></span></p>
+            <h2>Detalles de compra</h2>
+            <table class="TableComprador">
+                <tr>
+                    <th>Fecha de reservación:</th>
+                    <td><input type="date" id="fechaReservacion" readonly></td>
+                </tr>
+                <tr>
+                    <th>Fecha de pago:</th>
+                    <td><input type="date" id="fechaPago" readonly></td>
+                </tr>
+                <tr>
+                    <th>Adultos:</th>
+                    <td><input type="text" id="txtTiquetes" readonly></td>
+                </tr>
+                <tr>
+                    <th>Niños(a):</th>
+                    <td><input type="text" id="txtNinos" readonly></td>
+                </tr>
+                <tr>
+                    <th>Clase:</th>
+                    <td><input type="text" id="txtClase" readonly></td>
+                </tr>
+                <tr>
+                    <th>Tarifa:</th>
+                    <td><input type="text" id="txtTarifa" readonly></td>
+                </tr>
+            </table>
         </div>
 
         <div class="detalles-reserva">
-            <h2>Total a Pagar</h2>
-            <p><strong>Total sin IVA:</strong> <span id="total-sin-iva"></span></p>
-            <p><strong>Total con IVA:</strong> <span id="total-con-iva"></span></p>
+            <h2>Total a pagar</h2>
+
+
+            <table class="TableComprador">
+                <tr>
+                    <th>Monto total adulto:</th>
+                    <td><input type="number" id="txtMontoAdulto" readonly></td>
+                </tr>
+                <tr>
+                    <th>Monto total niños(a)</th>
+                    <td><input type="number" id="txtMontoNinos" readonly></td>
+                </tr>
+                <tr>
+                    <th>Total a pagar sin IVA:</th>
+                    <td><input type="number" id="txtTotal" readonly></td>
+                </tr>
+            </table>
         </div>
     </div>
-
- 
-
-
-
 </body>
+
+<script>
+    ObtenerDatos()
+</script>
 </html>

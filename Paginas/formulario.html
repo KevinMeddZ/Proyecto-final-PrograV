@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+    <script type="text/JavaScript"src="../JS/Funciones.js"></script>
+
     <title>Paso 2 -Reservacion</title>
 </head>
 <body class="body-segundo-paso">
@@ -15,11 +17,11 @@
             <table class="table-formulario">
                 <tr>
                     <th>Nombre:</th>
-                    <td><input type="text" id="txtNommbre"></td>
+                    <td><input type="text" id="txtNombre"></td>
                 </tr>
                 <tr>
                     <th>Cedula:</th>
-                    <td><input type="text" id="txtCedula"></td>
+                    <td><input type="number" id="txtCedula"></td>
                 </tr>
                 <tr>
                     <th>Email:</th>
@@ -43,30 +45,30 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Cantidad de tiquetes:</th>
+                    <th>Cantidad de adultos:</th>
                     <td><input type="number" id="txtTiquetes"></td>
                 </tr>
                 <tr>
                     <th>Cantidad de niños(a):</th>
-                    <td><input type="number" id="txtChamacos"></td>
+                    <td><input type="number" id="txtNinos"></td>
                 </tr>
                 <tr>
                     <th>Clase:</th>
                     <td>
-                        <input type="radio" name="op" id="economica" value="1">Económica
+                        <input type="radio" name="op" id="Economica" value="1">Económica
                         <input type="radio" name="op" id="Empresarial" value="2">Empresarial
                         <input type="radio" name="op" id="Primera clase" value="3">Primera clase
                     </td>
                 </tr>
                 <tr>
                     <th>Fecha reservación:</th>
-                    <td><input type="date" id="dateFechaReservacion"></td>
+                    <td><input type="date" id="fechaReservacion"></td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
 
-                        <input type="button" value="Siguiente paso" onclick="window.location.href='../Paginas/pago.html'" class="boton-formulario">
+                        <input type="button" value="Siguiente paso" onclick="Calcular()" class="boton-formulario">
                     </td>
                     
                 </tr>
