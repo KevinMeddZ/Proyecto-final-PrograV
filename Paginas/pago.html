@@ -81,7 +81,19 @@
                     <td><input type="number" id="txtMontoNinos" readonly></td>
                 </tr>
                 <tr>
-                    <th>Total a pagar sin IVA:</th>
+                    <th>Subtotal:</th>
+                    <td><input type="number" id="txtSubTotal" readonly></td>
+                </tr>
+                <tr>
+                    <th>Monto IV :</th>
+                    <td><input type="number" id="txtIV" readonly></td>
+                </tr>
+                <tr>
+                    <th>Monto excedente por clase:</th>
+                    <td><input type="number" id="txtExcedente" readonly></td>
+                </tr>
+                <tr>
+                    <th>Total a pagar :</th>
                     <td><input type="number" id="txtTotal" readonly></td>
                 </tr>
             </table>
@@ -90,6 +102,8 @@
 </body>
 
 <script>
-    ObtenerDatos()
+     window.onload = function() {
+            ObtenerDatos();
+        };
 </script>
 </html>

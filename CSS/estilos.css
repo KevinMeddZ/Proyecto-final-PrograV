@@ -296,6 +296,7 @@ li{
     width: calc(50% - 10px); /* Ajusta el ancho de cada contenedor */
     margin-bottom: 10px;
     box-sizing: border-box; /* Ajusta el tamaño para incluir el relleno y el borde */
+    text-align: center;
 }
 
 .detalles-reserva:last-child {

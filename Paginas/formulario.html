@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
-    <script type="text/JavaScript"src="../JS/Funciones.js"></script>
-
-    <title>Paso 2 -Reservacion</title>
+    <script type="text/JavaScript" src="../JS/Funciones.js"></script>
+    <title>Paso 2 - Reservacion</title>
 </head>
 <body class="body-segundo-paso">
     
     <div class="contenedor">
-        <form>
+        <form id="formulario">
             <h1>Reserva tu vuelo</h1>
             
             <table class="table-formulario">
                 <tr>
                     <th>Nombre:</th>
-                    <td><input type="text" id="txtNombre"></td>
+                    <td><input type="text" id="txtNombre" required></td>
                 </tr>
                 <tr>
                     <th>Cedula:</th>
-                    <td><input type="number" id="txtCedula"></td>
+                    <td><input type="number" id="txtCedula" required></td>
                 </tr>
                 <tr>
                     <th>Email:</th>
@@ -32,53 +31,48 @@
                     <td><input type="number" id="txtNumero"></td>
                 </tr>
 
-
-
                 <tr class="tr-formulario">
                     <th>Destino:</th>
-                    <td><select id="destinos" name="destinos">
-                        <option value="Peru">Peru</option>
-                        <option value="USA">USA</option>
-                        <option value="España">España</option>
-                        <option value="Panama">Panama</option>
-                        <option value="Guatemala">Guatemala</option>
+                    <td>
+                        <select id="destinos" name="destinos" required>
+                            <option value="Peru">Peru</option>
+                            <option value="USA">USA</option>
+                            <option value="España">España</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Guatemala">Guatemala</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
                     <th>Cantidad de adultos:</th>
-                    <td><input type="number" id="txtTiquetes"></td>
+                    <td><input type="number" id="txtTiquetes" required></td>
                 </tr>
                 <tr>
                     <th>Cantidad de niños(a):</th>
-                    <td><input type="number" id="txtNinos"></td>
+                    <td><input type="number" id="txtNinos" required></td>
                 </tr>
                 <tr>
                     <th>Clase:</th>
                     <td>
-                        <input type="radio" name="op" id="Economica" value="1">Económica
+                        <input type="radio" name="op" id="Economica" value="1" required>Económica
                         <input type="radio" name="op" id="Empresarial" value="2">Empresarial
-                        <input type="radio" name="op" id="Primera clase" value="3">Primera clase
+                        <input type="radio" name="op" id="PrimeraClase" value="3">Primera clase
                     </td>
                 </tr>
                 <tr>
                     <th>Fecha reservación:</th>
-                    <td><input type="date" id="fechaReservacion"></td>
+                    <td><input type="date" id="fechaReservacion" required></td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-
-                        <input type="button" value="Siguiente paso" onclick="Calcular()" class="boton-formulario">
+                        <input type="button" value="Siguiente paso" onclick=validarFormulario();  class="boton-formulario">
                     </td>
-                    
                 </tr>
                 
             </table>
         </form>
     </div>
-
-
-
-
+   
 </body>
 </html>
