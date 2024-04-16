@@ -16,24 +16,24 @@
     align-items: center;
 }
 
-.iconMain{
+.iconMain {
     width: 10px;
 }
 
 
-.imgIcon{
+.imgIcon {
     max-width: 50px;
     max-height: 50px;
     margin-right: 8px;
 }
 
-ul{
+ul {
     list-style-type: none;
-        padding: 0;
-        margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
-li{
+li {
     text-align: center;
 }
 
@@ -45,24 +45,24 @@ li{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 
 .center-table {
-    text-align: center; 
+    text-align: center;
 }
 
 
 .center-table img {
-    display: block; 
-    margin: 0 auto; 
+    display: block;
+    margin: 0 auto;
 }
 
-.center-table h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.center-table h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: green;
 }
 
@@ -87,7 +87,7 @@ li{
 
 
 
-.home-body{
+.home-body {
     background-color: rgb(15, 83, 83);
     margin: 0;
     padding: 0;
@@ -97,16 +97,22 @@ li{
 
 
 .card-white {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido */
-    backdrop-filter: blur(20px); /* Aplicar un desenfoque al fondo */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo translúcido */
+    backdrop-filter: blur(20px);
+    /* Aplicar un desenfoque al fondo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255); /* Color del texto */
-    padding: 20px; /* Espaciado interno */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
     margin: 20px auto;
     max-width: 800px;
     overflow: hidden;
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centrar el texto */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Centrar el texto */
 }
 
 .card table {
@@ -116,27 +122,33 @@ li{
 
 /* Galeria */
 
-.galery-body{
+.galery-body {
     background-color: rgb(15, 83, 83);
     margin: 0;
     padding: 0;
 }
 
 .card-whiteG {
-    background-color: rgba(24, 17, 17, 0.5); /* Fondo translúcido */
-    backdrop-filter: blur(20px); /* Aplicar un desenfoque al fondo */
+    background-color: rgba(24, 17, 17, 0.5);
+    /* Fondo translúcido */
+    backdrop-filter: blur(20px);
+    /* Aplicar un desenfoque al fondo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255); /* Color del texto */
-    padding: 20px; /* Espaciado interno */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
     margin: 20px auto;
     max-width: 1000px;
     overflow: hidden;
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centrar el texto */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Centrar el texto */
 }
 
-.galery-body h2{
-    color:whitesmoke;
+.galery-body h2 {
+    color: whitesmoke;
     text-align: center;
     font-style: italic;
 }
@@ -145,34 +157,35 @@ li{
 
 /*Paso 1*/
 
-.table-paso1{
+.table-paso1 {
     width: 50%;
     border-collapse: collapse;
     margin: 50px auto;
 }
 
-.tr-paso1, .td-paso1{
+.tr-paso1,
+.td-paso1 {
     padding: 10px;
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
 }
 
-.th-paso1{
+.th-paso1 {
     background-color: #ed7e4e;
 }
 
 
-.tr-paso1:hover{
+.tr-paso1:hover {
     background-color: #eca366;
 }
 
 
-.h1-primerPaso{
+.h1-primerPaso {
     text-align: center;
     color: #000;
 }
 
-.body-primer-paso{
+.body-primer-paso {
     background-image: url('../images/fondoPrimerPaso.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -181,39 +194,41 @@ li{
     padding: 0;
 }
 
-.contenedor{
+.contenedor {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo semi-transparente */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
 }
 
-.contenedor h1{
+.contenedor h1 {
     text-align: center;
 }
 
-.btnComprarTiquetes{
+.btnComprarTiquetes {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     outline: none;
     color: #fff;
-    
-    background-color:#fa9624  ;
+
+    background-color: #fa9624;
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(219, 142, 40, 0.5);
 }
 
 /* Estilo al pasar el cursor sobre el botón */
-.btnComprarTiquetes:hover{
+.btnComprarTiquetes:hover {
     background-color: #ee794a;
 }
 
-.centrar-boton{
+.centrar-boton {
     text-align: center;
 }
 
@@ -225,7 +240,7 @@ li{
 
 
 /*Paso 2*/
-.body-segundo-paso{
+.body-segundo-paso {
     background-image: url('../images/fondoPrimerPaso.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -235,20 +250,21 @@ li{
 }
 
 /*Formato del table del formulario*/
-.table-formulario{
+.table-formulario {
     width: 100%;
     border-collapse: collapse;
 }
 
 /*td del formulario*/
-.table-formulario td{
+.table-formulario td {
     padding: 10px;
     border-bottom: 1px solid #ffffff;
 }
 
 
 /*Formato a los input y los text del formulario*/
-.table-formulario input, .table-formulario textarea{
+.table-formulario input,
+.table-formulario textarea {
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
@@ -256,28 +272,28 @@ li{
 
 /*Botones del formulario*/
 
-.boton-formulario{
+.boton-formulario {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     outline: none;
     color: #fff;
-    
-    background-color:#fa9624  ;
+
+    background-color: #fa9624;
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(219, 142, 40, 0.5);
 }
 
-.boton-formulario:hover{
+.boton-formulario:hover {
     background-color: #ee794a;
 }
 
 
 
 /*PASO 3*/
-.body-tercer-paso{
+.body-tercer-paso {
     background-image: url('../images/fondoPrimerPaso.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -286,21 +302,24 @@ li{
     padding: 0;
 }
 
-.body-tercer-paso .contenedor{
+.body-tercer-paso .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .detalles-reserva {
-    width: calc(50% - 10px); /* Ajusta el ancho de cada contenedor */
+    width: calc(50% - 10px);
+    /* Ajusta el ancho de cada contenedor */
     margin-bottom: 10px;
-    box-sizing: border-box; /* Ajusta el tamaño para incluir el relleno y el borde */
+    box-sizing: border-box;
+    /* Ajusta el tamaño para incluir el relleno y el borde */
     text-align: center;
 }
 
 .detalles-reserva:last-child {
-    width: 100%; /* El último contenedor ocupa todo el ancho */
+    width: 100%;
+    /* El último contenedor ocupa todo el ancho */
 }
 
 /* Estilos adicionales */
@@ -310,10 +329,22 @@ li{
     border-radius: 5px;
 }
 
-.detalles-reserva > p {
-    margin: 5px 0; /* Ajusta el margen para los párrafos dentro de los contenedores */
+.detalles-reserva>p {
+    margin: 5px 0;
+    /* Ajusta el margen para los párrafos dentro de los contenedores */
 }
 
-.tableComprador th{
+.tableComprador th {
     text-align: right;
+}
+
+.letras {
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
 }
